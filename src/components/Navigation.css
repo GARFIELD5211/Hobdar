@@ -1,19 +1,79 @@
 nav {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 70px;
   z-index: 1000;
-  background: rgba(10, 10, 10, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border);
+
+  /* clear glass base */
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(24px) saturate(220%) brightness(1.15);
+  -webkit-backdrop-filter: blur(24px) saturate(220%) brightness(1.15);
+
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.35);
+
+  /* depth + edge */
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.45),
+    inset 0 2px 0 rgba(255,255,255,0.7),
+    inset 0 -2px 0 rgba(255,255,255,0.15);
+
+  overflow: hidden;
   animation: slideDown 0.6s ease-out;
 }
+
+/* glossy top reflection */
+nav::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.55),
+    rgba(255,255,255,0.08) 40%,
+    transparent 70%
+  );
+
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+/* moving light streak (reactbits vibe) */
+nav::after {
+  content: "";
+  position: absolute;
+  inset: -50%;
+  border-radius: inherit;
+
+  background: linear-gradient(
+    120deg,
+    transparent 40%,
+    rgba(255,255,255,0.45),
+    transparent 60%
+  );
+
+  filter: blur(12px);
+  opacity: 0.4;
+  animation: glassMove 8s linear infinite;
+}
+
+@keyframes glassMove {
+  from { transform: translateX(-40%) rotate(8deg); }
+  to   { transform: translateX(40%) rotate(8deg); }
+}
+
+
+
 
 .nav-content {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 1.5rem 2rem;
+  padding: 1.1rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
