@@ -77,10 +77,23 @@ html.has-scroll-dragging {
   cursor: grabbing;
 }
 
-/* Hide default cursor on desktop */
+/* Hide default cursor on desktop but keep interactive elements usable */
 @media (hover: hover) and (pointer: fine) {
-  * {
-    cursor: none !important;
+  body {
+    cursor: none;
+  }
+  /* Keep interactive elements usable and show appropriate cursors */
+  a,
+  button,
+  input,
+  textarea,
+  select,
+  label,
+  [role="button"] {
+    cursor: pointer !important;
+  }
+  .c-scrollbar_thumb {
+    cursor: grab;
   }
 }
 

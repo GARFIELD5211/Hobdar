@@ -175,6 +175,15 @@
 
 /* Mobile */
 @media (max-width: 640px) {
+
+  .light-rays-container {
+  width: 100%;
+  height: 200%;
+  position: relative;
+  pointer-events: none;
+  z-index: 3;
+  overflow: hidden;
+}
   .hero-text { text-align: center; }
 
   .hero-greeting { font-size: 1rem; }
@@ -205,3 +214,13 @@
   .profile-card { width: 200px; padding: 1rem; }
   .profile-card-image img { height: 180px; }
 }
+
+.light-rays-container {
+  width: 100%;
+  height: 200%;
+  position: relative;
+  pointer-events: none;
+  z-index: 3;
+  overflow: hidden;
+}
+

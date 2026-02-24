@@ -1,5 +1,5 @@
 import './Hero.css';
-import LightRays from './LightRays.tsx';
+import LightRays from './Lightrays.tsx';
 import { useEffect } from "react";
 
 const Hero = () => {
@@ -56,7 +56,7 @@ const Hero = () => {
       <div className="container">
         <div className="hero-content">
           <div className="hero-text" data-scroll data-scroll-speed="1">
-            <div className="hero-greeting">👋 Hey there!</div>
+            <div className="hero-greeting">Hey there!</div>
 
             <h2 className="hero-name decrypt" data-text="Saad Malik">
               Saad Malik
@@ -65,7 +65,7 @@ const Hero = () => {
             <h1 className="hero-title">Full Stack<br/>Web Developer</h1>
 
             <p className="hero-subtitle">
-              NERD | Student at BUIC'28 | Passionate about building innovative web solutions and turning ideas into reality.
+              NERD | Student at BUIC | Passionate about building innovative web solutions and turning ideas into reality.
             </p>
           </div>
 
