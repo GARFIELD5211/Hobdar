@@ -3,56 +3,64 @@ import './Projects.css';
 const Projects = () => {
   const projects = [
     {
-      category: 'Full Stack',
-      title: 'E-Commerce Platform',
-      description: 'Built a complete e-commerce solution with React, Node.js, and MongoDB. Features include cart management, payment integration, and admin dashboard.'
+      category: 'Shopify / Fashion',
+      title: 'Black Bird ',
+      description: 'Built Black Bird Clothing, a bold black-themed Shopify streetwear store with a clean, modern UI, smooth navigation, and a premium shopping feel designed to make products look expensive even when your budget disagrees.',
+      image: '/images/blackbird.webp',
+      link: 'https://blackbird.clothing'
     },
     {
-      category: 'Web App',
-      title: 'Real-Time Chat Application',
-      description: 'Developed a real-time messaging app using Socket.io, Express, and React with authentication and message persistence.'
+      category: 'Lead Gen / B2B',
+      title: 'The Voice Studio',
+      description: 'Lead-gen site for a B2B call centre. Service pages built around what their buyers actually care about, case studies pulled forward instead of buried, and a contact form short enough that people actually fill it out.',
+      image: '/images/tvs.webp',
+      link: 'https://thevoicestudio.com'
     },
     {
-      category: 'API Development',
-      title: 'RESTful API Service',
-      description: 'Created a scalable REST API with Node.js and PostgreSQL, implementing JWT authentication and comprehensive documentation.'
+      category: 'Media / Branding',
+      title: 'Broadcast UAE',
+      description: 'Portfolio site for a UAE media production company. Built it more like a landing page than a brochure, with the showreel doing the heavy lifting up top. Their work sells the work.',
+      image: '/images/broadcast.webp',
+      link: 'https://broadcastuae.com'
     },
     {
-      category: 'Dashboard',
-      title: 'Analytics Dashboard',
-      description: 'Built an interactive analytics dashboard with Next.js and Chart.js for real-time data visualization and reporting.'
+      category: 'AI Automation',
+      title: 'XYNTRA AI',
+      description: 'Site and back-office stack for a voice AI startup that sells into ecommerce. Their chatbot handles the tier-1 support tickets so their client`s human teams can stay on the harder stuff that actually needs a person.',
+      image: '/images/xyntra.webp',
+      link: 'https://xyntra.ai'
     }
   ];
 
-  const techStack = ['⚛️ React', '📦 Next.js', '💚 Node.js', '🍃 MongoDB', '🎨 Tailwind CSS', '📘 TypeScript', '🔥 Express.js', '🐳 Docker', '☁️ AWS', '🔌 REST API', '🎯 GraphQL', '🔐 JWT Auth'];
+  const handleViewProject = (link: string | undefined) => {
+    if (link) {
+      window.open(link, '_blank');
+    }
+  };
 
   return (
     <section id="projects" className="projects" data-scroll-section>
-      <div className="container">
-        <h2 className="section-title">Featured Projects</h2>
-        <p className="section-subtitle">Check out some of my recent work — from full-stack applications to innovative web solutions.</p>
-        
-        <div className="tech-stack-section">
-          <div className="tech-stack-scroll">
-            {[...techStack, ...techStack].map((tech, index) => (
-              <div key={index} className="tech-item">{tech}</div>
-            ))}
+      {projects.map((project, index) => (
+        <div key={index} className="project-fullscreen">
+          <div className="project-fullscreen-content">
+            <div 
+              className="project-fullscreen-image"
+              style={{ backgroundImage: `url(${project.image})` }}
+            ></div>
+            <div className="project-fullscreen-text">
+              <div className="project-category">{project.category}</div>
+              <h2 className="project-title">{project.title}</h2>
+              <p className="project-description">{project.description}</p>
+              <button 
+                className="project-btn"
+                onClick={() => handleViewProject(project.link)}
+              >
+                View Project →
+              </button>
+            </div>
           </div>
         </div>
-        
-        <div className="projects-grid">
-          {projects.map((project, index) => (
-            <div key={index} className="project-card">
-              <div className="project-image"></div>
-              <div className="project-content">
-                <div className="project-category">{project.category}</div>
-                <h3 className="project-title">{project.title}</h3>
-                <p className="project-description">{project.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      ))}
     </section>
   );
 };
