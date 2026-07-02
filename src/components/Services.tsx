@@ -14,32 +14,32 @@ const Services = () => {
     },
     {
       number: '2.',
-      title: 'Backend Development',
+      title: 'UI/UX Implementation',
       items: [
-        'Node.js & Express.js APIs',
-        'Database design (MongoDB, PostgreSQL)',
-        'RESTful & GraphQL APIs',
-        'Authentication & authorization'
+        'Pixel-perfect design to code',
+        'Interactive prototypes & mockups',
+        'Accessibility (a11y) best practices',
+        'Cross-browser compatibility'
       ]
     },
     {
       number: '3.',
-      title: 'Full Stack Apps',
+      title: 'Animation & Interaction',
       items: [
-        'End-to-end web applications',
-        'E-commerce platforms',
-        'Dashboard & admin panels',
-        'Real-time applications (Socket.io)'
+        'Smooth page transitions',
+        'Scroll-triggered animations',
+        'Micro-interactions & hover effects',
+        'Framer Motion & GSAP'
       ]
     },
     {
       number: '4.',
-      title: 'DevOps & Tools',
+      title: 'Performance & SEO',
       items: [
-        'Git & GitHub workflows',
-        'Docker containerization',
-        'CI/CD pipelines',
-        'Cloud deployment (AWS, Vercel)'
+        'Lighthouse score optimization',
+        'Lazy loading & code splitting',
+        'SEO-friendly markup',
+        'Fast load times & Core Web Vitals'
       ]
     }
   ];
@@ -51,7 +51,7 @@ const Services = () => {
           what I can build for you
         </h2>
         <p className="section-subtitle" data-scroll data-scroll-speed="1">
-          As a full stack developer, I create scalable, efficient, and user-friendly web applications that solve real-world problems.
+          As a frontend developer, I create beautiful, responsive, and performant web interfaces that deliver exceptional user experiences.
         </p>
         
         <div className="services-grid">

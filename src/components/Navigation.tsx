@@ -15,7 +15,7 @@ const Navigation = () => {
   return (
     <nav>
       <div className="nav-content">
-        <a href="#" className="logo">Saad Malik</a>
+        <a href="#" className="logo">Hobdar Haider</a>
         
         <button 
           className={`hamburger ${isOpen ? 'active' : ''}`}

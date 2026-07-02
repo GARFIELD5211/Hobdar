@@ -11,8 +11,6 @@
   align-items: center;
   justify-content: center;
   padding: 4rem 2rem;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 
 .project-fullscreen-content {
@@ -66,9 +64,7 @@
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.12) 100%);
 }
 
-.project-fullscreen:nth-child(4) .project-fullscreen-image::before {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 100%);
-}
+
 
 .project-fullscreen-text {
   display: flex;
@@ -175,11 +171,11 @@
     gap: 1.5rem;
   }
 
-  .project-fullscreen . project-title {
+  .project-fullscreen .project-title {
     font-size: 1.8rem;
   }
 
-  .project-fullscreen . project-description {
+  .project-fullscreen .project-description {
     font-size: 1rem;
   }
 

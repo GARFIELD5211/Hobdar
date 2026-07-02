@@ -58,14 +58,14 @@ const Hero = () => {
           <div className="hero-text" data-scroll data-scroll-speed="1">
             <div className="hero-greeting">Hey there!</div>
 
-            <h2 className="hero-name decrypt" data-text="Saad Malik">
-              Saad Malik
+            <h2 className="hero-name decrypt" data-text="Hobdar Haider">
+              Hobdar Haider
             </h2>
 
-            <h1 className="hero-title">Full Stack<br/>Web Developer</h1>
+            <h1 className="hero-title">Frontend<br/>Web Developer</h1>
 
             <p className="hero-subtitle">
-              NERD | Student at BUIC | Passionate about building innovative web solutions and turning ideas into reality.
+              Student at BUIC | Crafting beautiful, responsive, and performant web experiences with modern frontend technologies.
             </p>
           </div>
 
@@ -74,7 +74,7 @@ const Hero = () => {
   <div className="hero-image hero-profile-card">
   <div className="profile-card">
     <div className="profile-card-image">
-      <img src="https://www.saadmalik.tech/images/about-photo.jpg " alt="Saad Malik" />
+      <img src="\public\images\hobdar.webp" alt="Hobdar Haider" />
     </div>
     
   </div>

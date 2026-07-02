@@ -16,26 +16,26 @@ const Contact = () => {
           
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-group">
-              <label>Name</label>
-              <input type="text" placeholder="Your name" required />
+              <label htmlFor="name">Name</label>
+              <input id="name" type="text" placeholder="Your name" autoComplete="name" required />
             </div>
             <div className="form-group">
-              <label>Email</label>
-              <input type="email" placeholder="your@email.com" required />
+              <label htmlFor="email">Email</label>
+              <input id="email" type="email" placeholder="your@email.com" autoComplete="email" required />
             </div>
             <div className="form-group">
-              <label>Project Type</label>
-              <select required>
+              <label htmlFor="project-type">Project Type</label>
+              <select id="project-type" required>
                 <option value="">Select...</option>
-                <option value="fullstack">Full Stack App</option>
                 <option value="frontend">Frontend Development</option>
-                <option value="backend">Backend/API</option>
+                <option value="redesign">Site Redesign</option>
+                <option value="landing">Landing Page</option>
                 <option value="other">Other</option>
               </select>
             </div>
             <div className="form-group">
-              <label>Tell me about your project</label>
-              <textarea placeholder="Describe your project..." required></textarea>
+              <label htmlFor="message">Tell me about your project</label>
+              <textarea id="message" placeholder="Describe your project..." required></textarea>
             </div>
             <button type="submit" className="btn">Send Message</button>
           </form>

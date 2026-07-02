@@ -9,7 +9,7 @@ const About = () => {
         
         <div className="about-content">
           <div className="about-text">
-            <p>Hey! I'm Saad Malik — a full stack web developer and self-proclaimed NERD currently studying at BUIC'28. I love building things on the web and turning complex problems into elegant solutions.</p>
+            <p>Hey! I'm Hobdar Haider — a frontend web developer currently studying at BUIC'28. I love building beautiful, responsive, and performant user interfaces that deliver great user experiences.</p>
             
             <div className="stats-grid">
               <div className="stat-item">

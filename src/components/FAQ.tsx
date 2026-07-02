@@ -4,7 +4,7 @@ const FAQ = () => {
   const faqs = [
     '1. What technologies do you work with?',
     '2. How long does a typical project take?',
-    '3. Do you work on both frontend and backend?',
+    '3. Do you only focus on frontend development?',
     '4. Can you help with existing projects?',
     '5. Do you provide maintenance after deployment?',
     '6. How can we get started?'
