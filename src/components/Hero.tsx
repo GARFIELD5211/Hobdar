@@ -74,7 +74,7 @@ const Hero = () => {
   <div className="hero-image hero-profile-card">
   <div className="profile-card">
     <div className="profile-card-image">
-      <img src="\public\images\hobdar.webp" alt="Hobdar Haider" />
+      <img src="/images/hobdar.jpg" alt="Hobdar Haider" />
     </div>
     
   </div>
